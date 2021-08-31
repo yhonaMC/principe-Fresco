@@ -1,0 +1,50 @@
+#login-main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: no-repeat center url("../img/cover.png");
+    height: 100vh;
+}
+
+#login-main h1{
+    color: var(--logo-color);
+    font-size: 1.5rem;
+}
+
+#profile-main form {
+    margin: 24px auto 162px;
+    max-width: 700px;
+    background-color: var(--black);
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    color: var(--black);
+}
+
+.form-group input {
+    width: 100%;
+    border: 1px solid #535353;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px 14px;
+}
+
+#profile-form > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 98px;
+    color: white
+}

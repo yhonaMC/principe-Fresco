@@ -1,0 +1,227 @@
+:root {
+    --logo-color: #ff4c13;
+    --black: #1d1d1d;
+    --blue: #4276fb;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#navbar-logo {
+    font-family: "Vegan Style Personal Use", sans-serif;
+    color: var(--logo-color);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.nav-icons {
+    display: flex;
+}
+
+.nav-main-container {
+    margin: 25px 83px;
+}
+
+#index-main {
+    margin: 100px 0;
+}
+
+.welcome-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.main-img-container {
+    grid-area: 1/1/4/2;
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%);
+    grid-area: 1/1/4/2;
+}
+
+.main-img-text {
+    grid-area: 3/1/4/2;
+    color: white;
+    align-self: flex-end;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.index-categories-container {
+    margin: 50px 83px;
+    text-align: center;
+}
+
+.index-categories-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    width: 50%;
+    margin: 30px auto 0;
+}
+
+.index-categories-img > a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.index-categories-img > a:hover {
+    transition: all 0.8s;
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+.categorie {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+
+.categorie > img {
+    grid-area: 1/1/13/2;
+}
+
+.categorie > figcaption {
+    grid-area: 11/1/13/2;
+    padding: 2px 0;
+    background-color: #ffffff61;
+}
+
+.footer-bottom {
+    background-color: var(--black);
+    padding: 64px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom > p {
+    margin-bottom: 48px;
+    font-family: "Vegan Style Personal Use", sans-serif;
+    color: var(--logo-color);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+.nav-icons {
+    display: flex;
+}
+
+.class-shop {
+    margin: auto;
+}
+
+.class-shop a {
+    font-size: 16px;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+.titulo-1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.tallas {
+    margin-bottom: 30px;
+}
+
+.tallas h5 {
+    margin-bottom: 20px;
+}
+
+.tallas span {
+    margin-right: 20px;
+}
+
+.but-ons {
+    margin-bottom: 15px;
+}
+
+.but-ons button {
+    width: 80%;
+}
+
+.model-1 img{
+    margin-bottom: 20px;
+}
+
+.model-2 img{
+width:40%;
+margin-bottom: 20px;
+margin-left: 55%;
+}
+
+.texto {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.sizing{
+    margin-top: 45px;
+}
+.sizing a{
+    
+    font-size: 17px;
+ color: #000000;
+}
+.sizing a:hover{
+    color: orangered !important;
+}
+
+#index-main{
+    margin: 100px 0;
+}
+.welcome-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.main-img-container {
+    grid-area: 1/1/4/2;
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%);
+    grid-area: 1/1/4/2;
+}
+
+.main-img-text{
+    grid-area: 3/1/4/2;
+    color: white;
+    align-self: flex-end;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* Compra */
+
+.text-right{
+    text-align: right;
+}
+
+.btn-compra{
+ width: 70%;
+ text-align: center;
+}
