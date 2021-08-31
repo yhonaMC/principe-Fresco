@@ -1,0 +1,12 @@
+.Shoptitle{
+    text-align: center;
+    font-family: "Vegan Style Personal Use", sans-serif;
+    color: var(--logo-color);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.card{
+    align-items: center;
+    text-align: center;
+}
