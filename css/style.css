@@ -15,8 +15,11 @@ body {
     line-height: 2.5rem;
 }
 
+
+
 .nav-icons {
     display: flex;
+    margin-right: 5px;
 }
 
 .nav-main-container {
@@ -212,6 +215,10 @@ margin-left: 55%;
     justify-self: center;
     text-align: center;
     margin-bottom: 10px;
+}
+
+.center{
+    margin-left: 7%;
 }
 
 
