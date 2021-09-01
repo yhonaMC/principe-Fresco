@@ -1,13 +1,12 @@
 const divImagen = document.getElementById('product');
 
-
 const verProductos = async () => {
   divImagen.innerHTML = "";
   const response = await fetch('http://localhost:4000/productos');
   const data = await response.json();
 
   data.forEach(productos => {
-    const { categoria, title, precio, descripcion, thumbnailUrl } = productos;
+    const { id, categoria, title, precio, descripcion, thumbnailUrl } = productos;
     divImagen.innerHTML += `
      <div class="col">
      <div class="card">
@@ -19,7 +18,10 @@ const verProductos = async () => {
          <p class="card-text">${categoria}</p>
          <p class="card-text">${descripcion}</p>
          <p class="card-text">$ ${precio}</p>
-         <button class="btn btn-dark">Comprar</button>
+         <button class="btn btn-dark" 
+          onclick="
+            localStorage.setItem('idProduct', ${id});
+            window.open('shop-detail.html', '_self');"> Comprar</button>
        </div>
      </div>
  </div>    
@@ -28,5 +30,3 @@ const verProductos = async () => {
 }
 
 verProductos();
-
-

@@ -1,80 +1,75 @@
-{ 
-    "productos":[
-       {
-          "id": 1,
-          "categoria":"Hombre",
-          "title": "Buso",
-          "precio": 200.000,
-          "descripcion": "Hermosa buso para hombres almoldado para el frio ",
-          "thumbnailUrl": {
-            "img1":"./img/Frame 14.png",
-            "img2": "./img/Frame 15.png",
-            "img3": "./img/Frame 16.png"
-          },
-           "cantidad": {
-            "S": 4,
-            "M": 4,
-            "L": 4,
-            "XL": 4
-          }
-        },
-    
-          {
-            "id": 2,
-            "categoria":"Hombre",
-            "title": "Buso",
-            "precio": 150.000,
-            "descripcion": "Hermosa buso para hombres almoldado para el frio ",
-            "thumbnailUrl": {
-              "img1":"./img/man-product1.png",
-              "img2": "./img/Frame 22.png"
-              },
-             "cantidad": {
-              "S": 4,
-              "M": 4,
-              "L": 4,
-              "XL": 4
-            }  
-          },
-    
-    
-            {
-              "id": 3,
-              "categoria": "Mujer",
-              "title": "Buso Femenino",
-              "precio": 200,
-              "descripcion": "Hermoso buso para mujeres almoldado para el frio ",
-              "thumbnailUrl": {
-                "img1":"./img/Frame 17.png",
-                "img2": "./img/Frame 18.png",
-                "img3": "./img/Frame 19.png"
-              },
-               "cantidad": {
-                "S": 5,
-                "M": 3,
-                "L": 2,
-                "XL": 6
-              }
-            },
-    
-              {
-                "id": 4,
-                "categoria": "Mujer",
-                "title": "Pantalon y franela para dama",
-                "precio": 120.000,
-                "descripcion": "Hermoso jean y sueter de mujer realizado con algodon y perfecto para diferentes eventos ",
-                "thumbnailUrl": {
-                  "img1":"./img/Frame 20.png",
-                  "img2": "./img/Frame 21.png",
-                  "img3": "./img/Frame 22.png"
-                },
-                 "cantidad": {
-                  "S": 3,
-                  "M": 2,
-                  "L": 3,
-                  "XL": 6
-                }
-              }
-                  ]
+{
+  "productos": [
+    {
+      "id": 1,
+      "categoria": "Hombre",
+      "title": "Buso",
+      "precio": 200,
+      "descripcion": "Hermosa buso para hombres almoldado para el frio ",
+      "thumbnailUrl": {
+        "img1": "./img/Frame 14.png",
+        "img2": "./img/Frame 15.png",
+        "img3": "./img/Frame 16.png"
+      },
+      "cantidad": {
+        "S": 4,
+        "M": 4,
+        "L": 4,
+        "XL": 4
+      }
+    },
+    {
+      "id": 2,
+      "categoria": "Hombre",
+      "title": "Buso",
+      "precio": 150,
+      "descripcion": "Hermosa buso para hombres almoldado para el frio ",
+      "thumbnailUrl": {
+        "img1": "./img/man-product1.png",
+        "img2": "./img/Frame 22.png"
+      },
+      "cantidad": {
+        "S": 4,
+        "M": 4,
+        "L": 4,
+        "XL": 4
+      }
+    },
+    {
+      "id": 3,
+      "categoria": "Mujer",
+      "title": "Buso Femenino",
+      "precio": 200,
+      "descripcion": "Hermoso buso para mujeres almoldado para el frio ",
+      "thumbnailUrl": {
+        "img1": "./img/Frame 17.png",
+        "img2": "./img/Frame 18.png",
+        "img3": "./img/Frame 19.png"
+      },
+      "cantidad": {
+        "S": 5,
+        "M": 3,
+        "L": 2,
+        "XL": 6
+      }
+    },
+    {
+      "id": 4,
+      "categoria": "Mujer",
+      "title": "Pantalon y franela para dama",
+      "precio": 120,
+      "descripcion": "Hermoso jean y sueter de mujer realizado con algodon y perfecto para diferentes eventos ",
+      "thumbnailUrl": {
+        "img1": "./img/Frame 20.png",
+        "img2": "./img/Frame 21.png",
+        "img3": "./img/Frame 22.png"
+      },
+      "cantidad": {
+        "S": 3,
+        "M": 2,
+        "L": 3,
+        "XL": 6
+      }
     }
-    
+  ]
+}
