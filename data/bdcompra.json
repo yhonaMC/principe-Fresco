@@ -1,0 +1,13 @@
+{
+  "compras": [
+    {
+      "nomC": "Buso Femenino",
+      "precioC": 200,
+      "imagenC": "./img/Frame 17.png",
+      "cantidadC": 1,
+      "iddata": 3,
+      "cantidadZ": "xl",
+      "id": 1
+    }
+  ]
+}

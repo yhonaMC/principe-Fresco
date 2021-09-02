@@ -225,3 +225,39 @@ margin-left: 55%;
  width: 70%;
  text-align: center;
 }
+.less{
+    background-color: red;
+    width: 26px;
+        height: 25px;
+   line-height: 0px;
+    vertical-align: middle;
+    margin-bottom: 5px ;
+    border-radius:50%;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    
+    
+}
+#imgComp{
+    width: 60px;
+    height: 100px;
+}
+#containerPago{
+    display: none;
+}
+.plus{
+    background-color: green;
+    width: 26px;
+        height: 25px;
+   
+    line-height: 0px;
+   
+    vertical-align: middle;
+    margin-bottom: 5px ;
+    border-radius:50%;
+    text-align: left;
+    
+    font-weight: bold;
+    color:white;
+}

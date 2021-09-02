@@ -22,25 +22,29 @@ class UI {
     }
   }
 
+
+
   addProduct (data) {
     const currCompra = JSON.parse(localStorage.getItem('Compra'));
     const id = localStorage.getItem('idProduct');
     const size = localStorage.getItem('size');
-
+    
     if (currCompra.some(e => e.id == id)) {
       currCompra.find(e => e.id == id).cantidad ++;
       alert("zsd");
 
-    } else {
+    } else { 
+      console.log(data.cantidad[size])
       currCompra.push({
         "img": data.thumbnailUrl.img1,
         "nombre": data.title ,
         "precio": data.precio,
         "cantidad": 4 - data.cantidad[size],
+        "size": size,
         "id": data.id,
       });
     }
-
+    localStorage.setItem('zize', data.cantidad[size])
     localStorage.setItem('Compra', JSON.stringify(currCompra));
   }
 
@@ -85,7 +89,7 @@ class UI {
         <button type="button" class="btn btn-primary" id="addCard" > ADD TO CART </button>
       </div>
       <div class="but-ons off-less">
-        <button type="button" class="btn btn-dark" id="compraHref"> BUY IT NOW </button>  <!--ENLACE A CARRITO -->
+        <button type="button" class="btn btn-dark" id="compraH"> BUY IT NOW </button>  <!--ENLACE A CARRITO -->
       </div>  
     </div>
     `
@@ -114,8 +118,42 @@ document.getElementById('injeccion').addEventListener('click', e => {
   if(e.target.id == 'addCard'){
     if(localStorage.getItem('size'))
       userInterface.checkAdd();
+      cargaCarrito()
+  }
+  if(e.target.id == 'compraH'){
+    if(localStorage.getItem('size'))
+      userInterface.checkAdd();
+      cargaCarrito()
+      window.open('compra.html', '_self');
   }
 
-  if(e.target.id == 'compraHref') window.open('compra.html', '_self');
 
 });
+
+
+const cargaCarrito = async () =>{  
+  let detCompra = JSON.parse(localStorage.getItem('Compra'));  
+  
+  detCompra.forEach(comp => {
+    const { id, img, nombre, precio, size } = comp;
+    postCarrito(id, img, nombre, precio, size)
+  })
+  }
+  const postCarrito = async (id, img, nombre, precio, size) =>{    
+  
+    let resp = await fetch('http://localhost:4006/compras',{
+        method: 'POST',
+        body: JSON.stringify({
+        
+        nomC: nombre,
+        precioC: precio,
+        imagenC: img,
+        cantidadC: 1,
+        iddata: id,
+        cantidadZ: size
+        }),
+        headers: {
+            "Content-Type": "application/json; charset=UTF-8"
+        }
+    })
+  }
