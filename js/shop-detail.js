@@ -40,11 +40,11 @@ class UI {
         "nombre": data.title ,
         "precio": data.precio,
         "cantidad": 4 - data.cantidad[size],
-        "size": size,
+        "size": data.cantidad[size],
         "id": data.id,
       });
     }
-    localStorage.setItem('zize', data.cantidad[size])
+    
     localStorage.setItem('Compra', JSON.stringify(currCompra));
   }
 

@@ -47,7 +47,9 @@ const restar = async(id2) =>{
     console.log(modificar);
     const {imagenC,nomC,precioC,cantidadC, id} = modificar;
     let cantidadC1 = cantidadC - 1;
-
+    if (cantidadC1 < 1) {
+        alert('la cantidad es invalida')
+    }else{
     let resp2 = await fetch(`http://localhost:4006/compras/${idModificar}`, {
     method: 'PUT',
     body: JSON.stringify({
@@ -63,6 +65,7 @@ const restar = async(id2) =>{
         "Content-Type": "application/json; charset=UTF-8"
     }
 }) 
+    }
 }
 const sumar = async(id2) =>{
     console.log(id2)
