@@ -30,3 +30,4 @@ const verProductos = async () => {
 }
 
 verProductos();
+

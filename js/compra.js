@@ -2,10 +2,8 @@ let formulario = document.getElementById('profile-form');
 let listarCompras = document.getElementById('listarCompras');
 let borra = []
 
-
-
 const pintartabla =  async () =>{
-   
+
     let resp1 = await fetch('http://localhost:4006/compras');
     let data1 = await resp1.json();
     console.log(data1);
